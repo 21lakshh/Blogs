@@ -1,8 +1,16 @@
-export const Input = ({label, placeholder, onChange}) => {
+
+interface InputProps {
+  label: string;
+  placeholder?: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  type: string
+}
+
+export const Input: React.FC<InputProps> = ({ label, placeholder, onChange, type }) => {
     return (
         <div>
             <div className="text-sm font-medium text-left py-2">{label}</div>
-            <input type="text" onChange={onChange} placeholder={placeholder} className="w-full px-2 py-1 border rounded border-slate-200"/>
+            <input type={type || "text"} onChange={onChange} placeholder={placeholder} className="w-full px-2 py-1 border rounded border-slate-200"/>
         </div>
     )
 }

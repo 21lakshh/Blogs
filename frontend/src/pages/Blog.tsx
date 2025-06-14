@@ -1,6 +1,5 @@
 import { Appbar } from "../components/Appbar"
 import { useBlog } from "../hooks/useBlog"
-
 interface Blog {
     title: string,
     content: string,

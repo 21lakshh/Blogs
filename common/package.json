@@ -8,8 +8,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "zod": "^3.25.63"
-  }
+    "zod": "^3.25.64"
+  },
+  "types": "./dist/index.d.ts",
+  "description": ""
 }

@@ -105,7 +105,12 @@ blogRoute.get('/bulk', async (c) => {
     select: {
         id: true,
         title: true,
-        content: true
+        content: true,
+        author: {
+           select: {
+            name: true
+           }
+        }
     }
   });
 
@@ -120,7 +125,12 @@ blogRoute.get('/:id', async (c) => {
     where: {id: Blogid},
     select: {
         title: true,
-        content: true
+        content: true,
+        author: {
+          select: {
+            name: true
+          }
+        }
     }
   })
 

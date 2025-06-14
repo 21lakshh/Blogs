@@ -36,8 +36,8 @@ A full-stack blogging platform inspired by Medium, built with modern technologie
 
 | Method | Endpoint | Description |
 | ------ | -------- | ----------- |
-| `POST` | `/api/v1/auth/signup` | User registration |
-| `POST` | `/api/v1/auth/signin` | User login |
+| `POST` | `/api/v1/user/signup` | User registration |
+| `POST` | `/api/v1/user/signin` | User login |
 | `POST` | `/api/v1/blog/add` | Publish new blog |
 | `GET`  | `/api/v1/blog/bulk` | Fetch all blogs |
 | `GET`  | `/api/v1/blog/:id` | Fetch blog by ID |

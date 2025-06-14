@@ -3,7 +3,7 @@ import { Input } from "../components/Input"
 import { useState } from "react";
 import type { SigninInput } from "@laksh21/zodschemas";
 import axios from "axios";
-import { BACKEND_URL } from "../config";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 export const Signin = () => {
     const navigate = useNavigate()

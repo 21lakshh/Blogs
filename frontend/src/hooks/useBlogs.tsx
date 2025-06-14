@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { BACKEND_URL } from "../config"
+
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 interface Blog {
     title: string,
